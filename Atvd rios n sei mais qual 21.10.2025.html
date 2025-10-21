@@ -1,0 +1,363 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabelas de notas escolares</title>
+    </head>
+    <body>
+        <style>
+
+            header{
+                background-color: rgb(255, 202, 124);
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .tabexe{
+                border: solid 2px;
+                background-color: rgb(255, 202, 124);
+                border-collapse: separate;
+                margin-left: 400px;
+                margin-right: 400px;
+                margin-bottom: 400px;
+                margin-top: 200px;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            tr, td, th{
+                border: 2px solid;
+                border-radius: 10px;
+                padding: 5px;
+            }
+
+        </style>
+
+            <header><h1>Tabelas de notas escolares</h1></header>
+          
+                    <div>
+                        <h2> Instruções </h2>
+
+                        <p>Crie uma tabela HTML que represente o boletim de notas de uma turma escolar.<br> A tabela deve conter as seguintes caracteristicas</p>
+                    </div>
+
+                        <div>
+                            <h3> Instruções </h3>
+
+                            <ol>
+                                <li><U>Cabeçalho da Tabela Com titulo usando &it;tcaption&gt;</U></li>
+                                <li>Duas linhas de cabeçalho usando &it;thead&gt;</li>
+                                <li>Corpo da tabela com dados de cinco alunos usando &it;tbody&gt;</li>
+                                <li>Rodapé com estatistica usando &it;tfoot&gt;</li>
+                                <li>Uso de &it;th&gt; para células de cabeçalho</li>
+                                <li>Uso de colspan para mesclar células horizontalmente</li>
+                                <li>Uso de rowspan para mesclar células verticalmente</li>
+                                <li>atributo scope para acessibilidade</li>
+                            </ol>
+                        </div>
+
+                            <div>
+                                <h2>Exemplo de Solução</h2>
+
+                                <table>
+                                    <caption>Boletim de notas - 2º03-IPI</caption>
+                                    <thead>
+                                        <tr>
+                                        <th scope="col" rowspan="2">Aluno</th>
+                                        <th scope="col" colspan="2">Disciplinas</th>
+                                        <th scope="col" rowspan="2">Média geral</th>
+                                        <th scope="col" rowspan="2">Situação</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="col">Matemática</th>
+                                            <th scope="col">Português</th>
+                                            <th scope="col">Ciências</th>
+                                            <th scope="col">História</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Josefina dos Anjos</th>
+                                            <td>8,5</td>
+                                            <td>9,0</td>
+                                            <td>7,5</td>
+                                            <td>8,0</td>
+                                            <td>8,3</td>
+                                            <td>Aprovado!</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Raimundo Nonato da Silva</th>
+                                            <td>8,5</td>
+                                            <td>9,0</td>
+                                            <td>7,5</td>
+                                            <td>8,0</td>
+                                            <td>8,3</td>
+                                            <td>Aprovado!</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Ramon Queiroz</th>
+                                            <td>8,5</td>
+                                            <td>9,0</td>
+                                            <td>7,5</td>
+                                            <td>8,0</td>
+                                            <td>8,3</td>
+                                            <td>Aprovado!</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Cleiton Pinto de Andrade</th>
+                                            <td>8,5</td>
+                                            <td>9,0</td>
+                                            <td>7,5</td>
+                                            <td>8,0</td>
+                                            <td>8,3</td>
+                                            <td>Aprovado!</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Karoline de Mello Ladislau Stein Filho</th>
+                                            <td>8,5</td>
+                                            <td>9,0</td>
+                                            <td>7,5</td>
+                                            <td>8,0</td>
+                                            <td>8,3</td>
+                                            <td>Aprovado!</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th scope="row" colspan="6">Média da turma</th>
+                                            <td>7,5</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row" colspan="6">Percentual de aprovação</th>
+                                            <td>80%</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                                <div>
+                                    <h2>Exercício prático</h2>
+                                        <p>Crie sua própria tabela seguindo este modelo, mas com os seguintes dados:</p>
+
+                                    <h3>Dados para usar</h3>
+                                        <ul>
+                                            <li><strong>Turma: </strong>2ºV03-IPI</li>
+                                            <li><strong>Disciplinas: </strong>Matemática, Português, Geografia, Inglês</li>
+                                            <li><strong>Alunos: </strong>
+                                                <ul>
+                                                    <li>Gabriel Zancanelli: 6,9 - 4,5 - 10,0 - 10,0</li>
+                                                    <li>Juscelino Kubitscheck: 5,0 - 9,5 - 2,0 - 7,0</li>
+                                                    <li>Levandowski da Silva: 10,0 - 7,5 - 8,3 - 9,4</li>
+                                                    <li>Cristiano Ronaldo: 2,5 - 7,5 - 9,3 - 8,6</li>
+                                                    <li>Karoline de Mello Ladislau Stein Filho: 3,5 - 5,0 - 2,0 - 7,9</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                </div>
+
+                                    <div>
+                                        <h3>Calcule as Médias</h3>
+                                            <p>Para calcular a média geral de cada aluno some as quatro notas e divida as por quatro</p>
+                                                <p>
+                                                    Para a Situação: 
+                                                        <ul>
+                                                            <li>Aprovado: Média >= 7,0 </li>
+                                                            <li>Recuperação: Média entre 5 e 6,9 </li>
+                                                            <li>Reprovado: Média < 5,0 </li>
+                                                        </ul>
+                                                </p>                                   
+                                    </div>
+
+                                        <div>
+                                            <h2>Elementos HTML utilizados</h2>
+                                            <table>
+                                                <tr>
+                                                    <th>Tag</th>
+                                                    <th>Descrição</th>
+                                                    <th>Exemplo</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;table&gt;</td>
+                                                    <td>define uma tabela</td>
+                                                    <td>&it;table border="1" &gt;...&it;/table&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;tcaption&gt;</td>
+                                                    <td>Defina um título para a tabela</td>
+                                                    <td>&it;caption&gt;Minha tabela&it;/caption&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;thead&gt;</td>
+                                                    <td>Agrupa o conteúdo do cabeçalho</td>
+                                                    <td>&it;thead&gt;...&it;/thead&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;tbody&gt;</td>
+                                                    <td>Agrupa o conteúdo do corpo</td>
+                                                    <td>&it;tbody&gt;...&it;/tbody&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;tfoot&gt;</td>
+                                                    <td>Agrupa o conteúdo do rodapé</td>
+                                                    <td>&it;tfoot&gt;...&it;/tfoot&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;tr&gt;</td>
+                                                    <td>define uma linha da tabela</td>
+                                                    <td>&it;tr&gt;...&it;/tr&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;th&gt;</td>
+                                                    <td>Define uma célula de cabeçalho</td>
+                                                    <td>&it;th&gt;cabeçalho&it;/th&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;td&gt;</td>
+                                                    <td>Define uma célula de dados</td>
+                                                    <td>&it;td&gt;dado&it;/td&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;colspan&gt;</td>
+                                                    <td>Mescla células horizontalmente</td>
+                                                    <td>&it;td colspan ="2"&gt;...&it;/td&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;rowspan&gt;</td>
+                                                    <td>Mescla células verticalmente</td>
+                                                    <td>&it;td rowspan ="2"&gt;...&it;/td&gt;</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&it;scope&gt;</td>
+                                                    <td>Define a direção do cabeçalho</td>
+                                                    <td>&it;th scope ="col"&gt;...&it;/th&gt;</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                            <div>
+                                                <h2>Dica para resolver o exercício</h2>
+                                                <ol>
+                                                    <li>Começe pela estrutura básica da tabela com &it;table&gt;</li>
+                                                    <li>Adicione &it;caption&gt; com o título</li>
+                                                    <li>Crie o &it;thead&gt; com as duas linhas de cabeçalho</li>
+                                                    <li>Use colspan="4" para a célula "Disciplinas"</li>
+                                                    <li>Use rowspan="2" para as células "Alunos, Média Geral e Situação"</li>
+                                                    <li>Preencha com &it;tbody&gt; os dados dos alunos</li>
+                                                    <li>Calcule as médias e defina a situação de cada aluno</li>
+                                                    <li>Adicione o &it;tfoot&gt; com as estatísticas finais</li>
+                                                    <li>Use scope="col" para cabeçalhos de coluna e scope="row" para cabeçalhos de linha</li>    
+                                                </ol>
+                                            </div>
+
+                                                <div>
+                                                    <p>Boa sorte com o exercício! Lembre-se de testar sua tabela em um navegador para verificar se está funcionando corretamente</p>
+                                                </div>
+
+                                                    <div>
+                                                        <h2>Execução do exercício</h2>
+
+                                                                <table class="tabexe">
+                                                                    <caption>Boletim de notas - 2º03-IPI</caption>
+                                                                    <thead>
+                                                                        <tr>
+                                                                        <th scope="col" rowspan="2">Aluno</th>
+                                                                        <th scope="col" colspan="5">Disciplinas</th>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="col">Matemática</th>
+                                                                            <th scope="col">Lingua Portuguesa</th>
+                                                                            <th scope="col">Geografia</th>
+                                                                            <th scope="col">Lingua Inglesa</th>
+                                                                            <th scope="col" rowspan="2">Situação</th>
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">Gabriel Zancanelli</th>
+                                                                            <td>6,9</td>
+                                                                            <td>4,5</td>
+                                                                            <td>10,0</td>
+                                                                            <td>10,0</td>
+                                                                            <td>Aprovado!</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="row">Juscelino Kubitscheck</th>
+                                                                            <td>5,0</td>
+                                                                            <td>9,5</td>
+                                                                            <td>2,0</td>
+                                                                            <td>7,0</td>
+                                                                            <td>Recuperação</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="row">Levandowski da Silva</th>
+                                                                            <td>10,0</td>
+                                                                            <td>7,5</td>
+                                                                            <td>8,3</td>
+                                                                            <td>9,4</td>
+                                                                            <td>Aprovado!</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="row">Cristiano Ronaldo</th>
+                                                                            <td>2,5</td>
+                                                                            <td>7,5</td>
+                                                                            <td>9,3</td>
+                                                                            <td>8,6</td>
+                                                                            <td>Recuperação</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="row">Karoline de Mello Ladislau Stein Filho</th>
+                                                                            <td>3,5</td>
+                                                                            <td>5,0</td>
+                                                                            <td>2,0</td>
+                                                                            <td>7,9</td>
+                                                                            <td>Reprovado</td>
+                                                                        </tr>
+                                                                    </tbody>
+
+                                                                    <tfoot>
+                                                                        <tr>
+                                                                            <th scope="row" colspan="6">Média da turma</th>
+                                                                            <td>6,8</td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th scope="row" colspan="6">Percentual de aprovação</th>
+                                                                            <td>40%</td>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                    </div>
+
+
+
+    </body>
+</html>
